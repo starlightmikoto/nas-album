@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自建相册默认走局域网 http://IP:端口，这里允许明文；
+     如果你把服务暴露到公网，建议配 HTTPS（见 docs/外网访问.md）。 -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
